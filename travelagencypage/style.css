@@ -1,14 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Mali|Merienda");
+
+:root {
+  --primary-font: "Mali", cursive;
+  --secondary-font: "Merienda", cursive;
+  --primary-color: #ff8a80;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+.brand-logo,
+h3,
+h4 {
+  font-family: var(--secondary-font);
+}
+
 .section-search input {
-    padding: 5px !important;
-    font-size: 18px !important;
-    width: 90% !important;
-    border: #f4f4f4 3px solid !important;
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: #f4f4f4 3px solid !important;
 }
 
 .section-follow .fa-4x {
-    margin: 7px 15px;
+  margin: 7px 15px;
+}
+
+.section-follow .fa-4x:hover {
+  color: rgb(233, 231, 231);
 }
 
 .card-panel button {
-    background-color: #FF5252 !important;
+  background-color: #ff5252 !important;
+}
+
+.sidenav li > a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* label underline focus color */
+.card-panel .input-field input[type="text"]:focus {
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: 0 1px 0 0 var(--primary-color);
+}
+
+.card-panel .input-field input[type="email"]:focus {
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: 0 1px 0 0 var(--primary-color);
+}
+
+.card-panel .input-field input[type="number"]:focus {
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: 0 1px 0 0 var(--primary-color);
+}
+
+.card-panel .input-field textarea:focus {
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: 0 1px 0 0 var(--primary-color);
+}
+
+/* label focus color */
+.card-panel .input-field input[type="text"]:focus + label {
+  color: var(--primary-color);
+}
+
+.card-panel .input-field input[type="email"]:focus + label {
+  color: var(--primary-color);
+}
+
+.card-panel .input-field input[type="number"]:focus + label {
+  color: var(--primary-color);
+}
+
+.card-panel .input-field textarea:focus + label {
+  color: var(--primary-color);
 }
