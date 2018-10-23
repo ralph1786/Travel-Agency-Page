@@ -1,0 +1,22 @@
+{
+  "name": "travel-agency-page",
+  "version": "1.0.0",
+  "description": "Travel Agency Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralph1786/Travel-Agency-Page.git"
+  },
+  "author": "Ralph Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ralph1786/Travel-Agency-Page/issues"
+  },
+  "homepage": "https://github.com/ralph1786/Travel-Agency-Page#readme",
+  "dependencies": {
+    "jump.js": "^1.0.2"
+  }
+}
