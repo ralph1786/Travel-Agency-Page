@@ -5,13 +5,15 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RealityTravel</title>
 </head>
+
 <body id="home" class="scrollspy">
     <!-- Start of fixed navbar. -->
     <div class="navbar-fixed">
@@ -24,19 +26,19 @@
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <a href="#home">Home</a>
+                            <a href="#" id="link1">Home</a>
                         </li>
                         <li>
-                            <a href="#search">Search</a>
+                            <a href="#" id="link2">Search</a>
                         </li>
                         <li>
-                            <a href="#popular">Popular Locations</a>
+                            <a href="#" id="link3">Popular Locations</a>
                         </li>
                         <li>
-                            <a href="#gallery">Gallery</a>
+                            <a href="#" id="link4">Gallery</a>
                         </li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href="#" id="link5">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -62,14 +64,15 @@
         </li>
     </ul>
     <!-- Start of image slide. -->
-    <section class="slider">
+    <section class="slider target1">
         <ul class="slides">
             <li>
                 <img src="images/borabora.jpg">
                 <!-- random image -->
                 <div class="caption center-align">
                     <h3>Luxury Beach Vacations</h3>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">magnam dolorem harum nemo ea eaque reprehenderit nihil repellat pariatur cum nesciunt provident ratione Sequi.</h5>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">magnam dolorem harum nemo ea eaque
+                        reprehenderit nihil repellat pariatur cum nesciunt provident ratione Sequi.</h5>
                 </div>
             </li>
             <li>
@@ -77,7 +80,8 @@
                 <!-- random image -->
                 <div class="caption left-align">
                     <h3>Take Stroll In Europe.</h3>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi velit aut deleniti laborum perspiciatis animi?</h5>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Nisi velit aut deleniti laborum perspiciatis animi?</h5>
                 </div>
             </li>
             <li>
@@ -85,7 +89,8 @@
                 <!-- random image -->
                 <div class="caption right-align">
                     <h3>Take A Tour Of America.</h3>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A atque, corrupti vitae voluptate eum quam?</h5>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. A atque, corrupti vitae voluptate eum quam?</h5>
                 </div>
             </li>
             <li>
@@ -93,13 +98,14 @@
                 <!-- random image -->
                 <div class="caption center-align">
                     <h3>Open New Posibilities In Asia.</h3>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit modi quo neque voluptatem, debitis tenetur!</h5>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Odit modi quo neque voluptatem, debitis tenetur!</h5>
                 </div>
             </li>
         </ul>
     </section>
     <!-- Search Section -->
-    <section id="search" class="section section-search red accent-2 white-text center scrollspy">
+    <section id="search" class="section section-search red accent-2 white-text center target2">
         <div class="container">
             <div class="row">
                 <div class="col s12">
@@ -140,7 +146,7 @@
         </div>
     </section>
     <!-- Popular Locations Section -->
-    <section id="popular" class="section section-popular scrollspy">
+    <section id="popular" class="section section-popular target3">
         <h4 class="center">Popular <span class="red-text">Locations</span></h4>
         <div class="container">
             <div class="row">
@@ -207,89 +213,110 @@
         </div>
     </section>
     <!-- Gallery Section -->
-    <section id="gallery" class="section section-gallery scrollspy">
+    <section id="gallery" class="section section-gallery target4">
         <div class="container">
             <h4 class="center">
                 Photo <span class="red-text">Gallery</span>
             </h4>
             <div class="row">
                 <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1494843805337-17790590e923?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61426db26af891dca1d038306f54c4fb&auto=format&fit=crop&w=2558&q=80" alt="" class="materialboxed responsive-img">
+                    <img src="https://images.unsplash.com/photo-1494843805337-17790590e923?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61426db26af891dca1d038306f54c4fb&auto=format&fit=crop&w=2558&q=80"
+                        alt="" class="materialboxed responsive-img">
                 </div>
                 <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1438955185657-797f29aeaea8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=736daac70975c507e67e7c8bf5589c08&auto=format&fit=crop&w=1950&q=80" alt="" class="materialboxed responsive-img">
+                    <img src="https://images.unsplash.com/photo-1438955185657-797f29aeaea8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=736daac70975c507e67e7c8bf5589c08&auto=format&fit=crop&w=1950&q=80"
+                        alt="" class="materialboxed responsive-img">
                 </div>
                 <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1508823521238-06b20b6508d5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=02e4b8161fbbdb82993418c61641ec11&auto=format&fit=crop&w=1950&q=80" alt="" class="materialboxed responsive-img">
+                    <img src="https://images.unsplash.com/photo-1508823521238-06b20b6508d5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=02e4b8161fbbdb82993418c61641ec11&auto=format&fit=crop&w=1950&q=80"
+                        alt="" class="materialboxed responsive-img">
                 </div>
                 <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fe8441701b9b8810c1415303cefea965&auto=format&fit=crop&w=2600&q=80" alt="" class="materialboxed responsive-img">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1472669750356-ec9d2cadedd3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=20dce4751bb4b460a33b7e42428f854e&auto=format&fit=crop&w=1950&q=80" alt="" class="materialboxed responsive-img">
-                </div>
-                <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1508711046474-2f4c2d3d30ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d9753d35c4f5b62442eb81568033ddc2&auto=format&fit=crop&w=1950&q=80" alt="" class="materialboxed responsive-img">
-                </div>
-                <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1445978259239-a6c453c3513a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dbd3a45984efd584c3e371d335acad81&auto=format&fit=crop&w=2538&q=80" alt="" class="materialboxed responsive-img">
-                </div>
-                <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1465415224859-49a26384ea9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e8280ca37c1f8fed65a75aafc57b460&auto=format&fit=crop&w=1953&q=80" alt="" class="materialboxed responsive-img">
+                    <img src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fe8441701b9b8810c1415303cefea965&auto=format&fit=crop&w=2600&q=80"
+                        alt="" class="materialboxed responsive-img">
                 </div>
             </div>
             <div class="row">
                 <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/45/Vo7YbYQQ8iyOo4J9bOoj_ggb24.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b39d384fa00821678de34ff48791c69&auto=format&fit=crop&w=1952&q=80" alt="" class="materialboxed responsive-img">
+                    <img src="https://images.unsplash.com/photo-1472669750356-ec9d2cadedd3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=20dce4751bb4b460a33b7e42428f854e&auto=format&fit=crop&w=1950&q=80"
+                        alt="" class="materialboxed responsive-img">
                 </div>
                 <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1485607404151-3ae126828804?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=962b39b860af630f8b6677c8f2e0e4ac&auto=format&fit=crop&w=1955&q=80" alt="" class="materialboxed responsive-img">
+                    <img src="https://images.unsplash.com/photo-1508711046474-2f4c2d3d30ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d9753d35c4f5b62442eb81568033ddc2&auto=format&fit=crop&w=1950&q=80"
+                        alt="" class="materialboxed responsive-img">
                 </div>
                 <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1485087322071-235c96bb4297?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=313e23177207f07be8946294cef34844&auto=format&fit=crop&w=2691&q=80" alt="" class="materialboxed responsive-img">
+                    <img src="https://images.unsplash.com/photo-1445978259239-a6c453c3513a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dbd3a45984efd584c3e371d335acad81&auto=format&fit=crop&w=2538&q=80"
+                        alt="" class="materialboxed responsive-img">
                 </div>
                 <div class="col s12 m3">
-                    <img src="https://images.unsplash.com/photo-1515205244153-fce4e5d8bc49?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6a7b397884a498781a968818e6ed7865&auto=format&fit=crop&w=2621&q=80" alt="" class="materialboxed responsive-img">
+                    <img src="https://images.unsplash.com/photo-1465415224859-49a26384ea9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4e8280ca37c1f8fed65a75aafc57b460&auto=format&fit=crop&w=1953&q=80"
+                        alt="" class="materialboxed responsive-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="https://images.unsplash.com/45/Vo7YbYQQ8iyOo4J9bOoj_ggb24.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b39d384fa00821678de34ff48791c69&auto=format&fit=crop&w=1952&q=80"
+                        alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://images.unsplash.com/photo-1485607404151-3ae126828804?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=962b39b860af630f8b6677c8f2e0e4ac&auto=format&fit=crop&w=1955&q=80"
+                        alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://images.unsplash.com/photo-1485087322071-235c96bb4297?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=313e23177207f07be8946294cef34844&auto=format&fit=crop&w=2691&q=80"
+                        alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://images.unsplash.com/photo-1515205244153-fce4e5d8bc49?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6a7b397884a498781a968818e6ed7865&auto=format&fit=crop&w=2621&q=80"
+                        alt="" class="materialboxed responsive-img">
                 </div>
             </div>
         </div>
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="section section-contact scrollspy">
+    <section id="contact" class="section section-contact target5">
         <div class="container">
             <div class="row">
                 <div class="col s12 m6">
                     <div class="card-panel red accent-1 white-text center">
                         <i class="medium material-icons">email</i>
                         <h5>For Reservations</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae cum exercitationem ad maxime minima?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae cum exercitationem ad
+                            maxime minima?</p>
                     </div>
                     <ul class="collection with-header">
-                        <li class="collection-header"><h5>Location</h5></li>
+                        <li class="collection-header">
+                            <h5>Location</h5>
+                        </li>
                         <li class="collection-item">RealityTravel Inc.</li>
                         <li class="collection-item">123 Paradise Pl, 5th Floor</li>
                         <li class="collection-item">Coral, FL 98765</li>
                     </ul>
                 </div>
                 <div class="col s12 m6">
-                    <div class="card-panel grey lighten-3">
-                        <h5>Please fill out this form.</h5>
-                        <div class="input-field">
-                            <input type="text" placeholder="Name">
+                    <form>
+                        <div class="card-panel grey lighten-3">
+                            <h5>Please fill out this form.</h5>
+                            <div class="input-field">
+                                <input type="text" id="full_name" class="validate">
+                                <label for="full_name">Full Name</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="email" id="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="number" id="phone" class="validate">
+                                <label for="phone">Phone</label>
+                            </div>
+                            <div class="input-field">
+                                <textarea class="materialize-textarea" id="textarea1"></textarea>
+                                <label for="textarea1">Comments</label>
+                            </div>
+                            <button type="submit" class="waves-effect waves-light btn">Submit</button>
                         </div>
-                        <div class="input-field">
-                            <input type="email" placeholder="Email">
-                        </div>
-                        <div class="input-field">
-                            <input type="number" placeholder="Phone">
-                        </div>
-                        <div class="input-field">
-                            <textarea class="materialize-textarea" placeholder="Comments/Instructions"></textarea>
-                        </div>
-                        <button type="submit" class="waves-effect waves-light btn">Submit</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -300,9 +327,9 @@
     </footer>
 
     <!--JavaScript at end of body for optimized loading-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-<script src="main.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module" src="main.js"></script>
+
 </body>
 
 </html>
